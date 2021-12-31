@@ -1,0 +1,7 @@
+.footer{
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: flex-end;
+    padding: 0 1vw;
+}

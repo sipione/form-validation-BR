@@ -1,0 +1,21 @@
+main{
+    min-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: radial-gradient(white, rgb(78, 78, 78));
+}
+
+.card{
+    width: 100%;
+    max-width: 500px;
+    min-height:50vh;
+    background: url(../../images/sentForm.jpg) center/cover no-repeat;
+    border-radius: 50%;
+}
+
+.text1, .text2{
+    font-family: fantasy;
+    font-size: 4rem;
+}

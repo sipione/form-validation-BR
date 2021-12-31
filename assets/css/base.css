@@ -1,0 +1,16 @@
+@import url(reset.css);
+:root{
+    --titleFont: "";
+    --bodyFont: "Montserrat", sans-serif;
+}
+
+body{
+    font-family: var(--bodyFont);
+    width:auto;
+    box-sizing: border-box;
+    height: auto;
+}
+
+.hide{
+    display: none;
+}

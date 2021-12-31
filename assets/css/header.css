@@ -1,0 +1,84 @@
+header{
+    box-sizing: border-box;
+    overflow: hidden;
+    width: 100%;
+    height: 25vh;
+    padding: .5rem 1rem;
+    background-image: url(../../images/pexels-lumn-406014.jpg);
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.container--flex{
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo{
+    padding-left: 1rem;
+    width: 2rem;
+}
+.logo--desktop{
+    display: none;
+}
+
+.navIcon{
+    width: 2rem;
+}
+
+.navHeader{
+    display: flex;
+    gap: 1rem;
+
+    position: absolute;
+    top: -100px;
+    left: 50%;
+    transform: translate(-50%);
+    transition: 1s;
+}
+
+.showUp{
+    top: .5rem;
+}
+
+.navHeader__link{
+    text-decoration: none;
+    color: darkgray;
+}
+
+@media screen and (min-width: 700px){
+    header{
+        background: rgb(231, 230, 230);
+        height: 7.5vh;
+        padding: 0 1vw;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .container--flex, .logo, .navIcon{
+        display: none;
+    }
+    .logo--desktop{
+        display: block;
+        padding-left: 1rem;
+        width: 5.2vw;
+        height: 10vh;
+    }
+    .navHeader{
+        display: flex;
+        position: relative;
+        top: auto;
+        left: auto;
+        transform: none;
+    }
+    .showUp{
+        position: relative;
+    }
+    .navHeader__link{
+        font-size: 1.5vw;
+        color: black;
+    }
+
+    
+}
